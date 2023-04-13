@@ -1,1 +1,1 @@
-m=c=0;b=[c-m-1 for i,d in enumerate(open("k").readline())if(d=="M"and(m:=i))or(d=="C"and(c:=i))];print("".join([chr(i)for i in b if i!=-2]))
+m=c=0;b=[c-m-1 for i,d in enumerate(open("k").read())if(d=="M"and(m:=i))or(d=="C"and(c:=i))];print("".join([chr(i)for i in b if i!=-2]))
