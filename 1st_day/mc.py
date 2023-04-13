@@ -1,10 +1,1 @@
-with open("message.txt", "r") as f:
-    content = f.readline()
-    chars = []
-    for i,letter in enumerate(content):
-        if letter == "M":
-            m = i
-        elif letter == "C":
-            c = i
-            chars.append(chr(c - m -1))
-    print("".join(chars))
+m=c=0;b=[c-m-1 for i,d in enumerate(open("k").readline())if(d=="M"and(m:=i))or(d=="C"and(c:=i))];print("".join([chr(i)for i in b if i!=-2]))
