@@ -1,5 +1,5 @@
 f,s="1100 V/III/MCMLXXXV".split()
-r={1000:'M',500:'D',100:'C',50:'L',10:'X',5:'V',1:'I'}
+r={1000:'M',100:'C',50:'L',10:'X',5:'V',1:'I'}
 z={v:k for k,v in r.items()}
 e=s.split('/')
 f=int(f)
