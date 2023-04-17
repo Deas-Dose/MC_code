@@ -3,7 +3,7 @@
 
 # code explanation:
 # get the inputs
-f,e=int("1800"),"MMMDCCXXIV".split('/')
+f,e=int("1100"),"V/III/MCMLXXXV".split('/')
 # a map for roman numbers in latin, note that the 9s and 4s are mandatory because there isn't another "simple" way to get them with code
 z={'M':1000,"CM":900,'D':500,"CD":400,'C':100,"XC":90,'L':50,"XL":40,'X':10,"IX":9,'V':5,"IV":4,'I':1}
 # a map for latin numbers in roman
