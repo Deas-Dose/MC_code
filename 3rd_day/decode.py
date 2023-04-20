@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # We were told that the starting position is 5, which means it's the center of the padlock
     pos = [1, 1]
     # read the document to get the commands
-    command = open("doc.txt").read().split()
+    command = open("doc.txt", "r").read().split()
     road = []
     # get all the positions of each command with the help of our helper function
     for i in command:
@@ -33,7 +33,6 @@ if __name__ == "__main__":
         # append the new position to the road
         # note that i should use list method because else the road will append a reference of position and not the current value which will make the elements of road all the same with every iteration
         road.append(list(pos))
-        
     # get what the position refers to in the padlock
     solution = [padlock[i][j] for i,j in road]
     # print the solution
