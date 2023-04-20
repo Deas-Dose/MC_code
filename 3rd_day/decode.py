@@ -4,7 +4,7 @@ def find_number_from_command(cmd, position):
     # create a map for the instructions
     # R and L should move horizontaly so we add and substract from the first index
     # U and D should move verticaly so we add and substract from the second one
-    mouvements = {"U": [1, 0], "D": [-1, 0], "L": [0, -1], "R": [0, 1]}
+    mouvements = {"D": [1, 0], "U": [-1, 0], "L": [0, -1], "R": [0, 1]}
     # loop through the given command 
     for k in cmd:
         # check whether the move sets us outside the padlock
